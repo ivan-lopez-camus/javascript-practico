@@ -1,18 +1,21 @@
 //Codigo del cuadrado
 console.group("Cuadrado");
-const ladoCuadrado=5;
-console.log("Los lados del cuadrado miden: "+ladoCuadrado);
+function perimetroCuadrado(lado){
+    return lado*4;
+}
 
-const perimetroCuadrado = ladoCuadrado*4;
-console.log("El perimetro del cuadrado es: "+perimetroCuadrado);
+function areaCuadrado(lado){
+    return lado**2;
+}
 
-const areaCuadrado = ladoCuadrado**2;
-console.log("El area del cuadrado es: "+areaCuadrado + "cm2" );
+perimetroCuadrado(4);
+areaCuadrado(6);
+
 console.groupEnd();
 
 //Codigo del triangulo
 console.group("Triangulo");
-const lado1=6;
+/* const lado1=6;
 const lado2=6;
 const base=9;
 const altura=5;
@@ -27,12 +30,22 @@ const perimetroTriangulo = lado1+lado2+base;
 console.log("El perimetro del cuadrado es: "+perimetroTriangulo);
 
 const areaTriangulo = (base*altura)/2;
-console.log("El area del cuadrado es: "+areaTriangulo + "cm2" );
+console.log("El area del cuadrado es: "+areaTriangulo + "cm2" );*/
+
+function perimetroTriangulo(lado1,lado2,base){
+    return lado1+lado2+base
+}
+
+function areaTriangulo(base,altura){
+    return (base*altura)/2
+}
 console.groupEnd();
 
 //Codigo del circulo
 console.group("Circulo");
-const radio=10;
+const PI = Math.PI;
+console.log("El valor de Pi es: " +PI)
+/*const radio=10;
 const diametro=2*radio;
 const PI= Math.PI;
 
@@ -43,5 +56,13 @@ const perimetroCirculo = 2*PI*radio;
 console.log("El perimetro del circulo es: "+perimetroCirculo);
 
 const areaCirculo = PI*(radio**2);
-console.log("El area del cuadrado es: "+areaCirculo );
+console.log("El area del cuadrado es: "+areaCirculo );*/
+
+function perimetroCirculo(radio){
+    return 2*PI*radio;
+}
+
+function areaCirculo(radio){
+    return PI*(radio**2);
+}
 console.groupEnd();
