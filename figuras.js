@@ -66,3 +66,74 @@ function areaCirculo(radio){
     return PI*(radio**2);
 }
 console.groupEnd();
+
+//Interaccion con el HTML
+function calcularPerimetroCuadrado(){
+    const input= document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input= document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+//Interaccion con el HTML del triangulo
+function calcularPerimetroTriangulo(){
+    const input1= document.getElementById("inputLado1");
+    const input2= document.getElementById("inputLado2");
+    const input3= document.getElementById("inputBase");
+    const lado1 = Number(input1.value);
+    const lado2 = Number(input2.value);
+    const base = Number(input3.value);
+    if(lado1===lado2 && base!=lado1){
+        const perimetroTri = perimetroTriangulo(lado1,lado2,base);
+        alert(perimetroTri);
+    }
+    else if(lado1===lado2 && base!=lado2){
+        const perimetroTri = perimetroTriangulo(lado1,lado2,base);
+        alert(perimetroTri);
+       
+    }
+    else if(lado1===lado2===base){
+        alert("Es un triangulo equilatero, debe ingresar uno isosceles")
+    }
+    else{
+        alert("Los lados 1 y 2 deben ser iguales y diferentes a la base")
+    }
+    }
+   
+
+function calcularAreaTriangulo(){
+    /*const input1= document.getElementById("inputBase");
+    const input2= document.getElementById("inputAltura");
+    const base = input1.value;
+    const altura = input2.value;
+    const area = areaTriangulo(base,altura);
+    */
+    const input1= document.getElementById("inputLado1");
+    const input2= document.getElementById("inputLado2");
+    const input3= document.getElementById("inputBase");
+    const lado1 = Number(input1.value);
+    const lado2 = Number(input2.value);
+    const base = Number(input3.value);
+    const area= Math.sqrt(lado1**2-((base**2)/4))
+    alert(area);
+}
+
+function calcularPerimetroCirculo(){
+    const input= document.getElementById("inputRadio");
+    const radio = Number(input.value);
+    const perimetroCirc = perimetroCirculo(radio);
+    alert(perimetroCirc);
+}
+
+function calcularAreaCirculo(){
+    const input= document.getElementById("inputRadio");
+    const radio = Number(input.value);
+    const perimetroCirc = areaCirculo(radio);
+    alert(perimetroCirc);
+}
