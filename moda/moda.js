@@ -35,3 +35,4 @@ const lista1Array = Object.entries(lista1Count).sort(
 );
   
 const moda = lista1Array[lista1Array.length - 1];
+console.log(moda)
