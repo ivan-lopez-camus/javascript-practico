@@ -1,6 +1,13 @@
 
 body header h1{
     color: red;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight:bold;
+    padding:30px;
+    border-radius: 50px;
+    background-color:rgb(237, 250, 53)
 }   
 .btn-get-started {
     font-family: "Montserrat", sans-serif;
@@ -15,8 +22,18 @@ body header h1{
     border: 2px solid rgba(109, 250, 53, 0.966);
     color: rgb(255, 255, 255);
     background-color: rgba(109, 250, 53, 0.966);
+    text-decoration: none;
   }
 .btn-get-started:hover {
     color: #cd8f1d;
     background: rgba(109, 250, 53, 0.966);
+  }
+
+  ::marker{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    color: black
   }
