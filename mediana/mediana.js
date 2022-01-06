@@ -34,3 +34,8 @@ if(esPar(lista1.length)){
 else{
     mediana= lista1[mitadLista1];
 }
+
+bloque= document.getElementById("block");
+bloque.innerHTML = `<h2>La lista de numeros es : ${lista1}</h2>
+<h3>La mediana de la lista de numeros es : ${mediana}</h3>`;
+ 
