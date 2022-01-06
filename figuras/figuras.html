@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
     <link href="./figuras.css" rel="stylesheet" type="text/css">
     <title>Figuras geometricas</title>
 </head>
@@ -12,7 +12,7 @@
         <h1>Curso practico con figuras geometricas</h1>
         <p class="parrafo">Ejercicios de area y perimetro</p>
     </header>
-    <div style="display: inline-block;width: 100%;background-color:lightyellow;padding: 15px;">
+    <div style="display: inline-block;width: 100%;background-color:lightyellow;">
         <div class="left">
             <section>
                 <h2>Calcular area y perimetro de un cuadrado</h2>
@@ -21,8 +21,8 @@
                     Escribe cuanto mide cada lado de tu cuadrado:
                     </label>
                     <input class="input" id="inputCuadrado" type="number">
-                    <button type="button" onClick="calcularPerimetroCuadrado()">Calcula el perimetro</button>
-                    <button type="button" onClick="calcularAreaCuadrado()">Calcula el area</button>
+                    <button class="boton" type="button" onClick="calcularPerimetroCuadrado()">Calcula el perimetro</button>
+                    <button class="boton" type="button" onClick="calcularAreaCuadrado()">Calcula el area</button>
                     <p class="p" id="perCuad"></p>
                     <p class="p" id="arCuad"></p>
                 </form>
@@ -36,18 +36,18 @@
                     Escribe cuanto mide el radio:
                     </label>
                     <input class="input" id="inputRadio" type="number">
-                    <button type="button" onClick="calcularPerimetroCirculo()">Calcula el perimetro</button>
-                    <button type="button" onClick="calcularAreaCirculo()">Calcula el area</button>
+                    <button class="boton" type="button" onClick="calcularPerimetroCirculo()">Calcula el perimetro</button>
+                    <button class="boton" type="button" onClick="calcularAreaCirculo()">Calcula el area</button>
                     <p class="p" id="perCir"></p>
                     <p class="p" id="arCir"></p>
                 </form>
             </section>
         </div>  
     </div>
-    <div style="display: inline-block;width: 100%;background-color:lightyellow; padding:0.938rem;">
+    <div style="display: inline-block;width: 100%;background-color:lightyellow;">
     <section>
         <h2>Calcular area y perimetro de un triangulo isosceles</h2>
-        <form action="" style="margin-top:10px">
+        <form action="" style="margin-top:0.625rem">
             <div class="left">
             <label for="inputLado1">
             Escribe cuanto mide cada el lado 1 de tu triangulo 
@@ -68,8 +68,8 @@
            </label>
            <input class="input" id="inputAltura" type="number">
             </div>
-            <button type="button" onClick="calcularPerimetroTriangulo()">Calcula el perimetro</button>
-            <button type="button" onClick="calcularAreaTriangulo()">Calcula el area</button>
+            <button class="boton2" type="button" onClick="calcularPerimetroTriangulo()">Calcula el perimetro</button>
+            <button class="boton1" type="button" onClick="calcularAreaTriangulo()">Calcula el area</button>
             <p class="p" id="perimetro"></p>
             <p class="p" id="ar"></p>
         </form>

@@ -44,7 +44,7 @@ body header h1{
     font-size: 1.563rem;
     font-family: monospace;
     background-color: lightgreen;
-    margin: 0px;
+    margin: 0;
     height: 3.125rem;
     padding-top: 0.938rem;
 }
@@ -52,3 +52,44 @@ body header h1{
 .p{
     margin-top: 1.5rem;
 }
+
+.boton{
+    display: block;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+    margin-bottom: 1rem; 
+    padding: 0.5rem 1.75rem;
+}
+.boton1{
+    margin-left: 30rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+    margin-bottom: 1rem; 
+    padding: 0.5rem 1.75rem;
+}
+.boton2{
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+    margin-bottom: 1rem; 
+    padding: 0.5rem 1.75rem;
+}
+
+
+.boton:hover {
+    color: #000000;
+    background: rgba(250, 14, 14, 0.966);
+  }
+.boton1:hover {
+    color: #000000;
+    background: rgba(250, 14, 14, 0.966);
+  }
+.boton2:hover {
+    color: #000000;
+    background: rgba(250, 14, 14, 0.966);
+  }
