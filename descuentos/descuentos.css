@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    background-color:lightblue;
+}
+
+.is{
+    
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+}
+
+.boton{
+    display: block;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+
+.boton:hover {
+    color: #000000;
+    background: rgba(250, 14, 14, 0.966);
+  }

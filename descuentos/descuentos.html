@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./descuentos.css" rel="stylesheet" type="text/css">
     <title>Porcentajes y descuentos</title>
 </head>
-<body>
+<body style="margin:1rem">
     <header>
         <h1>Porcentajes y descuentos</h1>
     </header>
-    <section>
+    <section style="margin-top:1rem;">
         <h2>Calcular precio con descuento</h2>
-        <form action="">
+        <form action="" style="margin-top:1rem;">
             <label for="inputPrecio">
             Escribe el precio de tu producto
             </label>
-            <input id="inputPrecio" type="number">
+            <input class="is" id="inputPrecio" type="number">
 
             <select id="InputCoupon" name="select">
-                <option value="JuanDC_es_Batman">JuanDC_es_Batman</option>
-                <option value="pero_no_le_digas_a_nadie" selected>pero_no_le_digas_a_nadie</option>
-                <option value="es_un_secreto">es_un_secreto</option>
+                <option value="Cupon1">Cupon1</option>
+                <option value="Cupon2" selected>Cupon2</option>
+                <option value="Cupon3">Cupon3</option>
             </select>
 
-            <button type="button" onClick="onClickButton()">Calcula el precio final</button>
+            <button class="boton" type="button" onClick="onClickButton()">Calcula el precio final</button>
             
-            <p id="precioFinal"></p>
+            <p id="precioFinal" style="margin-top:1rem;"></p>
         </form>
     </section>
     <script src="./descuentos.js"></script>
